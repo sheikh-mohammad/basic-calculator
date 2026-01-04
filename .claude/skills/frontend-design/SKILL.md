@@ -1,5 +1,5 @@
 ---
-name: frontend-design-modern-aesthetic
+name: frontend-design
 description: This skill should be used when creating modern, aesthetically pleasing frontend components using HTML, CSS, JS, and Tailwind CSS with contemporary design principles inspired by clean SaaS and AI product interfaces.
 ---
 
