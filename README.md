@@ -1,17 +1,17 @@
 # Basic Calculator
 
-## Core Functionality Questions:
+## Core Functionality:
 
 1. Mathematical operations
   - Addition (+)
   - Subtraction (-)
   - Multiplication (*)
   - Division (/)
-2. Handles integer and floating-point arithmetic both
-3. High precision precision for decimal calculations
+2. Handles integer and floating-point arithmetic
+3. High precision for decimal calculations
 4. BODMAS Order of Operations
 
-## Features Discussion:
+## Features:
 
 1. **Input Methods:**
   - Keyboard input (CLI) -> Phase 1
@@ -30,7 +30,7 @@
 ## Technical Constraints:
 
 1. **Frontend:**
-  - HTML, CSS, JS and Tailwind CSS
+  - HTML, CSS, JS, and Tailwind CSS
 2. **Backend:**
   - Python backend for complex calculations with type hints
 3. **Platform:**
