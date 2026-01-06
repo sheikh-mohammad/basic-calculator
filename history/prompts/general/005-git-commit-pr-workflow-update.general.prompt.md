@@ -1,5 +1,5 @@
 ---
-id: 05
+id: 005
 title: git-commit-pr-workflow-update
 stage: general
 date: 2026-01-07

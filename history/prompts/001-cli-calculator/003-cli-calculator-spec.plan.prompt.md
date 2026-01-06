@@ -1,5 +1,5 @@
 ---
-id: 03
+id: 003
 title: CLI Calculator Specification
 stage: plan
 date: 2026-01-06

@@ -1,5 +1,5 @@
 ---
-id: "04"
+id: "004"
 title: "create-requirements-quality-checklist"
 stage: "plan"
 date: "2026-01-07"
