@@ -7,7 +7,7 @@
 
 ## Summary
 
-This plan outlines the implementation of a command-line interface (CLI) calculator that supports basic mathematical operations (addition, subtraction, multiplication, division) with proper order of operations (BODMAS). The calculator will be implemented in Python with type hints, following test-driven development principles, and will include comprehensive error handling for invalid inputs and edge cases.
+This plan outlines the implementation of a command-line interface (CLI) calculator that supports basic mathematical operations (addition, subtraction, multiplication, division) with proper order of operations (BODMAS). The calculator will be implemented in Python 3.8+ with type hints, following test-driven development principles, and will include comprehensive error handling for invalid inputs and edge cases. The implementation will use a secure expression evaluation approach to prevent code injection, support flexible expression formatting (with or without spaces), and provide multiple exit options ('quit', 'exit', Ctrl+C).
 
 ## Technical Context
 
@@ -25,13 +25,16 @@ This plan outlines the implementation of a command-line interface (CLI) calculat
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- ✅ Mathematical Accuracy (Principle I): Calculator must maintain high precision and follow BODMAS
+- ✅ Mathematical Accuracy (Principle I): Calculator must maintain high precision (10 decimal places) and follow BODMAS
 - ✅ User Input Validation (Principle II): Must validate all inputs and handle errors gracefully
 - ✅ Test-First (Principle III): All functionality must be covered by unit tests before implementation
 - ✅ Cross-Platform Compatibility (Principle IV): CLI should work on all platforms
-- ✅ Error Handling and Recovery (Principle V): Must handle errors gracefully and provide clear messages
+- ✅ Error Handling and Recovery (Principle V): Must handle errors gracefully, maintain state, and provide clear messages
 - ✅ Python Type Hints (Principle IX): All Python code must include comprehensive type hints
 - ✅ Code Documentation (Principle X): All code must include appropriate documentation
+- ✅ Security (Secure Expression Evaluation): Must safely evaluate expressions to prevent code injection
+- ✅ Usability (Flexible Input): Must support flexible expression formatting (with/without spaces)
+- ✅ User Experience (Multiple Exit Options): Must provide multiple ways to exit ('quit', 'exit', Ctrl+C)
 
 ## Project Structure
 
