@@ -116,6 +116,14 @@ A user wants to clear the current input or reset the calculator state, and also 
 - **FR-014**: System MUST maintain application state after error conditions to allow continued operation
 - **FR-015**: System MUST maintain and display calculation history to support user reference
 
+### Technical Constraints
+
+- **TC-001**: Implementation MUST be command-line interface (CLI) only for this phase; GUI interface may be added in future phases
+- **TC-002**: Implementation MUST be in Python 3.8+ with type hints as required by constitution
+- **TC-003**: Implementation MUST be cross-platform compatible (Windows, macOS, Linux)
+- **TC-004**: Implementation MUST use secure expression evaluation to prevent code injection
+- **TC-005**: Implementation MUST support fast dependency management with uv package manager
+
 ### Key Entities
 
 - **Mathematical Expression**: A string containing numbers and operators that represents a calculation to be performed; supports flexible formatting with or without spaces between operands and operators
