@@ -2,12 +2,16 @@
 
 ## Prerequisites
 - Python 3.8 or higher
-- pip package manager
+- uv package manager
 
 ## Setup
 1. Clone or create the calculator project
 2. Navigate to the project directory
 3. Install dependencies (if any):
+   ```bash
+   uv pip install -r requirements.txt
+   ```
+   Or alternatively:
    ```bash
    pip install -r requirements.txt
    ```

@@ -21,6 +21,7 @@ We will implement the CLI calculator using:
 
 - **Language**: Python 3.8+
 - **Core Dependencies**: Built-in Python modules (ast, operator, sys, re)
+- **Package Management**: uv for fast dependency resolution and installation
 - **Testing Framework**: pytest
 - **Architecture**: Single-module application with separation of concerns
 - **Type Hints**: Comprehensive typing as required by constitution
@@ -54,6 +55,7 @@ The architecture will be organized as:
 - Minimal external dependencies reduce maintenance burden
 - Built-in AST module provides safe expression evaluation
 - pytest provides comprehensive testing capabilities
+- uv package manager ensures fast dependency resolution and installation
 
 ### Negative
 - Need to implement custom parser instead of using built-in eval()

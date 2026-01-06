@@ -1,14 +1,14 @@
 <!-- SYNC IMPACT REPORT
-Version change: 1.1.0 → 1.2.0 (minor enhancement)
-Modified principles: I, II, V, VI (enhanced with additional requirements)
-Added sections: VII, VIII, IX, X (new principles for atomic commits, SDD, type hints, and commented code)
+Version change: 1.2.0 → 1.3.0 (minor enhancement)
+Modified principles: None
+Added sections: Technical Constraints update (added uv package manager)
 Removed sections: None
 Templates requiring updates:
-- .specify/templates/plan-template.md ✅ updated
-- .specify/templates/spec-template.md ✅ updated
-- .specify/templates/tasks-template.md ✅ updated
+- .specify/templates/plan-template.md ⚠ pending
+- .specify/templates/spec-template.md ⚠ pending
+- .specify/templates/tasks-template.md ⚠ pending
 - .specify/templates/commands/*.md ⚠ pending
-Follow-up TODOs: none
+Follow-up TODOs: Update all templates to reference uv package manager
 -->
 # Basic Calculator Constitution
 
@@ -49,6 +49,7 @@ All code must include appropriate documentation and comments explaining complex 
 The following constraints must be adhered to in all implementations:
 - Frontend: HTML, CSS, JavaScript with Tailwind CSS for styling
 - Backend: Python for complex calculations with type hints for clarity
+- Package Management: Use uv as the Python package manager for fast dependency resolution and installation
 - Platform: Must be mobile responsive
 - Deployment: Vercel CLI for deployment
 - Testing: Unit tests required for both frontend (Jest/Vitest) and backend (pytest)
@@ -62,4 +63,4 @@ All changes must follow the red-green-refactor cycle. Code reviews must verify c
 
 This constitution supersedes all other development practices for the Basic Calculator project. All code changes must demonstrate compliance with these principles. Amendments to this constitution require documentation of rationale and approval.
 
-Version: 1.2.0 | Ratified: 2026-01-05 | Last Amended: 2026-01-05
+Version: 1.3.0 | Ratified: 2026-01-05 | Last Amended: 2026-01-07
