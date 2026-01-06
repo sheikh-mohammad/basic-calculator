@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Python 3.8+ with type hints as required by constitution + Built-in Python modules (ast, operator), pytest for testing (001-cli-calculator)
+- N/A (no persistent storage needed for CLI calculator) (001-cli-calculator)
+
+## Recent Changes
+- 001-cli-calculator: Added Python 3.8+ with type hints as required by constitution + Built-in Python modules (ast, operator), pytest for testing
