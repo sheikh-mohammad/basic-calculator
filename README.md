@@ -33,11 +33,13 @@
   - HTML, CSS, JS, and Tailwind CSS
 2. **Backend:**
   - Python backend for complex calculations with type hints
-3. **Platform:**
+3. **Package Management:**
+  - uv for fast dependency resolution and installation
+4. **Platform:**
   - Mobile responsiveness
-4. **Deployment:**
+5. **Deployment:**
   - Vercel CLI
-5. **Testing:**
+6. **Testing:**
   - Unit tests for frontend(jest or vitest) and backend(pytest)
   
 ## User Experience:

@@ -22,6 +22,14 @@
 - unittest - Rejected as pytest is preferred per constitution
 - doctest - Rejected as it's less comprehensive for this use case
 
+## Decision: Package Management
+**Rationale**: Using uv as specified in the updated constitution. Uv provides fast dependency resolution and installation, improving developer experience and build times.
+
+**Alternatives considered**:
+- pip + requirements.txt - Standard but slower than uv
+- poetry - More feature-rich but potentially overkill for this simple calculator project
+- pipenv - Good but not as fast as uv for dependency resolution
+
 ## Decision: Type Hint Implementation
 **Rationale**: Following constitution Principle IX, all functions will include comprehensive type hints for parameters and return values. This improves code clarity and enables static type checking.
 

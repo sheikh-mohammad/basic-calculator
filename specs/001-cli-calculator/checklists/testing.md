@@ -3,6 +3,7 @@
 **Purpose**: Validate test coverage and quality for the CLI calculator implementation
 **Created**: 2026-01-07
 **Feature**: [Link to spec.md](../spec.md)
+**Environment**: Tests should be run in an environment managed with uv for consistent dependencies
 
 ## Test Coverage Completeness
 

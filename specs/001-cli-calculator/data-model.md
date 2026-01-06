@@ -1,5 +1,8 @@
 # Data Model: CLI Calculator
 
+## Overview
+This data model describes the core entities for the CLI calculator implemented in Python with uv for fast dependency management. The calculator supports basic mathematical operations with proper order of operations (BODMAS) and includes comprehensive error handling.
+
 ## Core Entities
 
 ### MathematicalExpression

@@ -24,6 +24,8 @@ We will implement a custom expression evaluator using Python's AST (Abstract Syn
 - Evaluates the safe AST to compute the result
 - Provides proper operator precedence (BODMAS) naturally through AST structure
 
+Dependencies will be managed using uv for fast dependency resolution and installation.
+
 ## Alternatives Considered
 
 - **Alternative 1**: Using Python's `eval()` function
@@ -46,6 +48,7 @@ We will implement a custom expression evaluator using Python's AST (Abstract Syn
 - Properly handles operator precedence naturally
 - Aligns with minimal dependency requirements
 - Provides educational value in understanding expression parsing
+- uv package manager ensures fast dependency resolution and installation
 
 ### Negative
 - More complex implementation than using eval()

@@ -1,0 +1,7 @@
+# Python dependencies for the CLI Calculator
+# Managed with uv for fast dependency resolution
+
+# Testing framework
+pytest>=7.0.0
+
+# Optional: additional packages can be added as needed

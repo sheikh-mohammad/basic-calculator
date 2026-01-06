@@ -3,6 +3,7 @@
 **Purpose**: Validate implementation readiness and completeness before development
 **Created**: 2026-01-07
 **Feature**: [Link to spec.md](../spec.md)
+**Environment**: Implementation should be developed and tested in an environment managed with uv for consistent dependencies
 
 ## Implementation Completeness
 

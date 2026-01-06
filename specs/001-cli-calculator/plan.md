@@ -12,6 +12,7 @@ This plan outlines the implementation of a command-line interface (CLI) calculat
 ## Technical Context
 
 **Language/Version**: Python 3.8+ with type hints as required by constitution
+**Package Management**: uv for fast dependency resolution and installation
 **Primary Dependencies**: Built-in Python modules (ast, operator), pytest for testing
 **Storage**: N/A (no persistent storage needed for CLI calculator)
 **Testing**: pytest for backend testing as specified in constitution
