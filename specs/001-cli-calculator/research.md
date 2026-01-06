@@ -63,3 +63,18 @@
 **Alternatives considered**:
 - Single exit command - Rejected as it's less flexible for users
 - Only Ctrl+C - Rejected as it's not discoverable for all users
+
+## Decision: Calculation History Management
+**Rationale**: To comply with the constitution's requirement for calculation history reference, we'll implement a history system that stores the last N calculations (e.g., 10-20 most recent) with expression and result pairs. This provides user reference capability in the CLI context.
+
+**Alternatives considered**:
+- No history - Rejected as it doesn't meet constitutional requirements
+- File-based persistent history - Rejected as it adds complexity for this phase
+- In-memory history (chosen) - Provides required functionality with minimal complexity
+
+## Decision: Cross-Platform Compatibility
+**Rationale**: Ensuring the calculator works identically across Windows, macOS, and Linux by using Python's cross-platform libraries and avoiding platform-specific features. This meets the constitutional requirement for cross-platform functionality.
+
+**Alternatives considered**:
+- Platform-specific implementations - Rejected as it violates cross-platform principle
+- Cross-platform using Python standard library (chosen) - Meets requirements with minimal dependencies

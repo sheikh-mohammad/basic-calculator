@@ -7,7 +7,7 @@
 
 ## Summary
 
-This plan outlines the implementation of a command-line interface (CLI) calculator that supports basic mathematical operations (addition, subtraction, multiplication, division) with proper order of operations (BODMAS). The calculator will be implemented in Python 3.8+ with type hints, following test-driven development principles, and will include comprehensive error handling for invalid inputs and edge cases. The implementation will use a secure AST-based expression evaluation approach to prevent code injection, support flexible expression formatting (with or without spaces), and provide multiple exit options ('quit', 'exit', Ctrl+C).
+This plan outlines the implementation of a command-line interface (CLI) calculator that supports basic mathematical operations (addition, subtraction, multiplication, division) with proper order of operations (BODMAS). The calculator will be implemented in Python 3.8+ with type hints, following test-driven development principles, and will include comprehensive error handling for invalid inputs and edge cases. The implementation will use a secure expression evaluation approach to prevent code injection, support flexible expression formatting (with or without spaces), and provide multiple exit options ('quit', 'exit', Ctrl+C).
 
 ## Technical Context
 
@@ -32,7 +32,7 @@ This plan outlines the implementation of a command-line interface (CLI) calculat
 - ✅ Error Handling and Recovery (Principle V): Must handle errors gracefully, maintain state, and provide clear messages
 - ✅ Python Type Hints (Principle IX): All Python code must include comprehensive type hints
 - ✅ Code Documentation (Principle X): All code must include appropriate documentation
-- ✅ Security (Secure Expression Evaluation): Must use AST-based approach to prevent code injection
+- ✅ Security (Secure Expression Evaluation): Must safely evaluate expressions to prevent code injection
 - ✅ Usability (Flexible Input): Must support flexible expression formatting (with/without spaces)
 - ✅ User Experience (Multiple Exit Options): Must provide multiple ways to exit ('quit', 'exit', Ctrl+C)
 

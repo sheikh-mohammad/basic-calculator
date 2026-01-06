@@ -34,6 +34,15 @@
   - `/`: 2
 - **Validation**: Higher number indicates higher precedence
 
+### CalculationHistory
+- **Type**: `list[tuple[MathematicalExpression, CalculationResult, datetime]]`
+- **Description**: Record of previous calculations that can be accessed by the user for reference
+- **Fields**:
+  - `expression`: The original mathematical expression entered by the user
+  - `result`: The calculated result or error message
+  - `timestamp`: When the calculation was performed
+- **Validation**: Should maintain last N calculations (e.g., 10-20 most recent) for reference
+
 ## Data Flow
 
 ### Input Processing
@@ -42,6 +51,7 @@
 3. Expression is parsed into tokens (numbers, operators, parentheses)
 4. Expression is evaluated respecting `OperatorPrecedence`
 5. Result is returned as `CalculationResult`
+6. Successful calculation is stored in `CalculationHistory` for user reference
 
 ### Error Handling
 1. If division by zero detected → return error message as `CalculationResult`
@@ -79,3 +89,4 @@ ERROR → EXIT (on quit, exit command, or Ctrl+C)
 - `MathematicalExpression` is processed to produce `CalculationResult`
 - `OperatorPrecedence` guides the evaluation of `MathematicalExpression`
 - Error conditions cause transition to `ERROR` state with error message in `CalculationResult`
+- Completed calculations are stored in `CalculationHistory` for user reference

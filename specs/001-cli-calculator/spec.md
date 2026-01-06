@@ -72,18 +72,19 @@ A user enters invalid expressions or operations that could cause errors (like di
 
 ---
 
-### User Story 5 - Clear Functions (Priority: P3)
+### User Story 5 - Clear Functions and History (Priority: P3)
 
-A user wants to clear the current input or reset the calculator state. The calculator should provide clear functions to reset the current calculation.
+A user wants to clear the current input or reset the calculator state, and also access previous calculation history. The calculator should provide clear functions to reset the current calculation and maintain calculation history.
 
-**Why this priority**: Usability enhancement that improves the user experience by allowing easy reset of calculations.
+**Why this priority**: Usability enhancement that improves the user experience by allowing easy reset of calculations and access to previous results.
 
-**Independent Test**: Can be fully tested by using clear functions and verifying calculator state is reset appropriately.
+**Independent Test**: Can be fully tested by using clear functions and verifying calculator state is reset appropriately, and by checking calculation history functionality.
 
 **Acceptance Scenarios**:
 
 1. **Given** calculator has a current input, **When** user enters "clear" command, **Then** calculator resets to initial state
 2. **Given** calculator has an error state, **When** user enters "clear" command, **Then** calculator resets to initial state
+3. **Given** calculator has completed calculations, **When** user enters "history" command, **Then** calculator displays recent calculation history
 
 ---
 
@@ -111,16 +112,18 @@ A user wants to clear the current input or reset the calculator state. The calcu
 - **FR-010**: System MUST provide clear function to reset current calculation state
 - **FR-011**: System MUST support flexible expression formatting (with or without spaces between operands and operators)
 - **FR-012**: System MUST provide multiple exit options ('quit', 'exit' commands and Ctrl+C)
-- **FR-013**: System MUST use secure expression evaluation approach (AST-based) to prevent code injection
+- **FR-013**: System MUST use secure expression evaluation approach to prevent code injection
 - **FR-014**: System MUST maintain application state after error conditions to allow continued operation
+- **FR-015**: System MUST maintain and display calculation history to support user reference
 
 ### Key Entities
 
 - **Mathematical Expression**: A string containing numbers and operators that represents a calculation to be performed; supports flexible formatting with or without spaces between operands and operators
 - **Calculation Result**: The numerical output produced by evaluating a mathematical expression with up to 10 decimal places precision
 - **Calculator State**: The current status of the calculator (ready, processing, error, etc.) that persists through error conditions
-- **Secure Expression Evaluator**: Component that safely evaluates expressions using AST-based parsing to prevent code injection
-- **CLI Interface**: Command-line interface supporting both interactive mode and single-expression mode with multiple exit options ('quit', 'exit', Ctrl+C)
+- **Secure Expression Evaluator**: Component that safely evaluates expressions to prevent code injection
+- **CLI Interface**: Command-line interface supporting both interactive mode and single-expression mode with multiple exit options ('quit', 'exit', Ctrl+C); functions identically across all supported platforms
+- **Calculation History**: Record of previous calculations that can be accessed by the user for reference
 
 ## Success Criteria *(mandatory)*
 
@@ -134,6 +137,8 @@ A user wants to clear the current input or reset the calculator state. The calcu
 - **SC-006**: Calculator maintains secure execution environment with no code injection vulnerabilities during expression evaluation
 - **SC-007**: Calculator supports flexible expression formatting (with or without spaces) with 100% parsing accuracy
 - **SC-008**: Calculator maintains application state after error conditions allowing continued operation without restart
+- **SC-009**: Calculator functions identically across all supported platforms (Windows, macOS, Linux)
+- **SC-010**: Calculator maintains and displays calculation history for user reference
 
 ## Clarifications
 
@@ -144,3 +149,5 @@ Q: What precision should be used for floating-point operations? → A: 10 decima
 Q: Should expressions require spaces between operands and operators? → A: Flexible format
 Q: How should users exit the calculator? → A: Multiple options (exit, quit, Ctrl+C)
 Q: Should calculator support operations beyond basic 4? → A: Basic operations only
+Q: Does calculator need GUI interface with visual display? → A: CLI interface is sufficient for this phase; future phase may add GUI
+Q: How to handle previous calculation history in CLI? → A: Display recent calculations in command history

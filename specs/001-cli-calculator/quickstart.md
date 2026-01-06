@@ -19,7 +19,7 @@ python calculator.py
 ```
 
 ### Interactive mode:
-The calculator will start in interactive mode where you can enter expressions one by one. Uses secure AST-based evaluation and supports flexible formatting (with or without spaces):
+The calculator will start in interactive mode where you can enter expressions one by one. Uses secure expression evaluation and supports flexible formatting (with or without spaces):
 ```
 Calculator started. Enter expressions or commands ('quit', 'exit', or Ctrl+C to exit).
 > 5 + 3
@@ -32,6 +32,11 @@ Calculator started. Enter expressions or commands ('quit', 'exit', or Ctrl+C to 
 Error: Division by zero
 > 5 + 3  # Calculator still running after error
 8
+> history
+5 + 3 = 8
+(10 + 5) * 2 = 30
+5+3*2 = 11
+5 + 3 = 8
 > quit
 Calculator closed.
 ```
@@ -54,6 +59,7 @@ python calculator.py "5 + 3 * 2"
 ## Available Commands
 - `quit`, `exit`, or Ctrl+C: Close the calculator
 - `clear` or `c`: Reset the current calculation
+- `history`: Display previous calculation history
 - Any valid mathematical expression
 
 ## Error Handling
@@ -61,4 +67,4 @@ python calculator.py "5 + 3 * 2"
 - Division by zero is handled gracefully without crashing the application
 - Invalid syntax will show appropriate error messages
 - Calculator maintains state after errors to allow continued operation
-- Secure AST-based evaluation prevents code injection attempts
+- Secure expression evaluation prevents code injection attempts
