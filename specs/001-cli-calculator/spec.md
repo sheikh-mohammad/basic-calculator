@@ -125,3 +125,13 @@ A user wants to clear the current input or reset the calculator state. The calcu
 - **SC-003**: Calculator processes user input and displays results in under 1 second
 - **SC-004**: Calculator handles error conditions gracefully without crashing in 100% of test cases
 - **SC-005**: 95% of users can successfully perform basic calculations on first attempt without documentation
+
+## Clarifications
+
+### Session 2026-01-07
+
+Q: How does the calculator run - in interactive mode or single-expression mode? → A: Interactive mode
+Q: What precision should be used for floating-point operations? → A: 10 decimal places
+Q: Should expressions require spaces between operands and operators? → A: Flexible format
+Q: How should users exit the calculator? → A: Multiple options (exit, quit, Ctrl+C)
+Q: Should calculator support operations beyond basic 4? → A: Basic operations only
