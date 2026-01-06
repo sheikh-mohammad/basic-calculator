@@ -18,7 +18,7 @@ This plan outlines the implementation of a command-line interface (CLI) calculat
 **Testing**: pytest for backend testing as specified in constitution
 **Target Platform**: Cross-platform (Windows, macOS, Linux) as per constitution
 **Project Type**: Single CLI application
-**Performance Goals**: <100ms response time for calculations
+**Performance Goals**: <1 second response time for calculations (aligning with spec requirement SC-003)
 **Constraints**: Must handle division by zero, invalid expressions, maintain high precision for floating-point arithmetic (10 decimal places), support flexible expression formatting (with or without spaces), and provide multiple exit options ('exit', 'quit', Ctrl+C) as per constitution
 **Scale/Scope**: Single-user CLI tool with no concurrent users
 

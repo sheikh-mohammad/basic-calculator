@@ -117,8 +117,9 @@ description: "Task list for CLI Calculator implementation"
 
 - [ ] T031 [P] [US3] Implement operator precedence logic in src/calculator/parser.py
 - [ ] T032 [US3] Implement parentheses handling in expression parser in src/calculator/parser.py
-- [ ] T033 [US3] Update calculator core to respect operator precedence in src/calculator/core.py
-- [ ] T034 [US3] Test complex expressions with mixed operations in calculator.py
+- [ ] T033 [US3] Implement negative number support in expression parser in src/calculator/parser.py
+- [ ] T034 [US3] Update calculator core to respect operator precedence in src/calculator/core.py
+- [ ] T035 [US3] Test complex expressions with mixed operations in calculator.py
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -173,16 +174,15 @@ description: "Task list for CLI Calculator implementation"
 **Purpose**: Improvements that affect multiple user stories
 
 - [ ] T049 [P] Implement flexible expression formatting (with/without spaces) in src/calculator/parser.py
-- [ ] T050 [P] Add support for negative numbers in src/calculator/parser.py
-- [ ] T051 [P] Implement multiple exit options ('quit', 'exit', Ctrl+C) in src/calculator/cli.py
-- [ ] T052 [P] Secure expression evaluation using AST approach in src/calculator/parser.py
-- [ ] T053 [P] Add type hints to all modules following constitution requirements
-- [ ] T054 [P] Documentation updates in README.md and docstrings
-- [ ] T055 Code cleanup and refactoring
-- [ ] T056 Performance optimization across all components
-- [ ] T057 [P] Additional unit tests in tests/unit/
-- [ ] T058 Security hardening
-- [ ] T059 Run quickstart.md validation
+- [ ] T050 [P] Implement multiple exit options ('quit', 'exit', Ctrl+C) in src/calculator/cli.py
+- [ ] T051 [P] Secure expression evaluation using AST approach in src/calculator/parser.py
+- [ ] T052 [P] Add type hints to all modules following Constitution IX (Python Type Hints) requirements
+- [ ] T053 [P] Documentation updates in README.md and docstrings following Constitution X (Code Documentation) requirements
+- [ ] T054 Code cleanup and refactoring following Constitution VII (Atomic Commits) principles
+- [ ] T055 Performance optimization across all components
+- [ ] T056 [P] Additional unit tests in tests/unit/
+- [ ] T057 Security hardening
+- [ ] T058 Run quickstart.md validation
 
 ---
 
