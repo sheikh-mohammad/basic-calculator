@@ -18,7 +18,7 @@ This plan outlines the implementation of a command-line interface (CLI) calculat
 **Target Platform**: Cross-platform (Windows, macOS, Linux) as per constitution
 **Project Type**: Single CLI application
 **Performance Goals**: <100ms response time for calculations
-**Constraints**: Must handle division by zero, invalid expressions, and maintain high precision for floating-point arithmetic as per constitution
+**Constraints**: Must handle division by zero, invalid expressions, maintain high precision for floating-point arithmetic (10 decimal places), support flexible expression formatting (with or without spaces), and provide multiple exit options ('exit', 'quit', Ctrl+C) as per constitution
 **Scale/Scope**: Single-user CLI tool with no concurrent users
 
 ## Constitution Check

@@ -1,5 +1,5 @@
 ---
-id: 5
+id: 02
 title: Update CLAUDE Instructions For Atomic Commits
 stage: general
 date: 2026-01-05

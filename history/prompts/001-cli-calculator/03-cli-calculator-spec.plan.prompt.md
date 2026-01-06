@@ -1,5 +1,5 @@
 ---
-id: 01-cli-calculator-spec
+id: 03
 title: CLI Calculator Specification
 stage: plan
 date: 2026-01-06
