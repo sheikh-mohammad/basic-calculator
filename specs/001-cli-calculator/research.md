@@ -44,8 +44,22 @@
 - Third-party expression evaluators - Rejected to maintain control and minimize dependencies
 
 ## Decision: Precision Handling
-**Rationale**: Using Python's native float type for calculations but implementing checks for precision issues. For integer operations, Python's int type will be used which has arbitrary precision.
+**Rationale**: Using Python's native float type for calculations but implementing formatting to limit output to 10 decimal places as specified in requirements. For integer operations, Python's int type will be used which has arbitrary precision.
 
 **Alternatives considered**:
 - Decimal module - Rejected as it's not necessary for basic calculator operations
 - Custom precision handling - Rejected as Python's native types are sufficient for this use case
+
+## Decision: Flexible Expression Formatting
+**Rationale**: Implementing a tokenizer that can handle expressions with or without spaces between operands and operators. This requires preprocessing the input string to identify operators and numbers regardless of spacing.
+
+**Alternatives considered**:
+- Requiring strict spacing - Rejected as it's less user-friendly
+- Multiple parsing strategies - Rejected in favor of a single flexible parser
+
+## Decision: Multiple Exit Options
+**Rationale**: Supporting multiple ways to exit the calculator ('quit', 'exit' commands and Ctrl+C) to provide flexibility for users. This follows common CLI application patterns.
+
+**Alternatives considered**:
+- Single exit command - Rejected as it's less flexible for users
+- Only Ctrl+C - Rejected as it's not discoverable for all users

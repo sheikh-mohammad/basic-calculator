@@ -1,5 +1,5 @@
 ---
-id: 1
+id: 01
 title: cli-calculator-spec
 stage: spec
 date: '2026-01-06'

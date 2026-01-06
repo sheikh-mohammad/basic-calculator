@@ -19,13 +19,15 @@ python calculator.py
 ```
 
 ### Interactive mode:
-The calculator will start in interactive mode where you can enter expressions one by one:
+The calculator will start in interactive mode where you can enter expressions one by one. Supports flexible formatting (with or without spaces):
 ```
-Calculator started. Enter expressions or 'quit' to exit.
+Calculator started. Enter expressions or commands ('quit', 'exit', or Ctrl+C to exit).
 > 5 + 3
 8
 > (10 + 5) * 2
 30
+> 5+3*2
+11
 > quit
 Calculator closed.
 ```
@@ -39,13 +41,14 @@ python calculator.py "5 + 3 * 2"
 
 ## Usage Examples
 - Basic operations: `5 + 3`, `10 - 4`, `6 * 7`, `15 / 3`
+- Flexible formatting: `5+3`, `10-4`, `6*7`, `15/3` (no spaces)
 - Decimal numbers: `3.14 * 2.5`, `10.5 + 3.25`
 - Order of operations: `2 + 3 * 4` evaluates to `14`, not `20`
 - Parentheses: `(2 + 3) * 4` evaluates to `20`
 - Division by zero: `5 / 0` returns "Error: Division by zero"
 
 ## Available Commands
-- `quit` or `exit`: Close the calculator
+- `quit`, `exit`, or Ctrl+C: Close the calculator
 - `clear` or `c`: Reset the current calculation
 - Any valid mathematical expression
 

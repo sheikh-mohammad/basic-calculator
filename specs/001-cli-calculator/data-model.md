@@ -11,7 +11,7 @@
 ### CalculationResult
 - **Type**: `Union[float, int, str]`
 - **Description**: The numerical output produced by evaluating a mathematical expression or an error message
-- **Validation**: Must be a numeric value or a string starting with "Error:"
+- **Validation**: Must be a numeric value (with up to 10 decimal places precision) or a string starting with "Error:"
 - **Examples**: 8, 7.85, "Error: Division by zero"
 
 ### CalculatorState
@@ -56,11 +56,13 @@
 - Must have balanced parentheses
 - Must have valid operator/operand alternation
 - Must not have consecutive operators (except for negative numbers)
+- Should support flexible formatting (with or without spaces between operands and operators)
 
 ### Result Validation
 - Results must be finite numbers (not inf or NaN)
 - Division by zero must be caught and handled
 - Expression evaluation must not exceed system limits
+- Results should maintain up to 10 decimal places precision for floating-point calculations
 
 ## State Transitions
 
