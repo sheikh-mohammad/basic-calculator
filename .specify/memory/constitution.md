@@ -1,55 +1,65 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: 1.1.0 → 1.2.0 (minor enhancement)
+Modified principles: I, II, V, VI (enhanced with additional requirements)
+Added sections: VII, VIII, IX, X (new principles for atomic commits, SDD, type hints, and commented code)
+Removed sections: None
+Templates requiring updates:
+- .specify/templates/plan-template.md ✅ updated
+- .specify/templates/spec-template.md ✅ updated
+- .specify/templates/tasks-template.md ✅ updated
+- .specify/templates/commands/*.md ⚠ pending
+Follow-up TODOs: none
+-->
+# Basic Calculator Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Mathematical Accuracy
+All calculations must maintain high precision for both integer and floating-point arithmetic. Decimal calculations must preserve precision according to mathematical standards. Order of operations must follow BODMAS rules (Brackets, Orders, Division/Multiplication, Addition/Subtraction). The calculator must support the core mathematical operations: Addition (+), Subtraction (-), Multiplication (*), and Division (/).
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. User Input Validation
+All user inputs must be validated before processing. Invalid inputs must be rejected gracefully with clear error messages. Division by zero must be detected and handled appropriately. Overflow conditions must be detected and managed. Invalid operations must be identified and handled with appropriate user feedback.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Test-First (NON-NEGOTIABLE)
+All functionality must be covered by unit tests before implementation. TDD approach required: Tests written → Test approval → Tests fail → Implementation → Tests pass. Frontend tests using Jest/Vitest, backend tests using pytest.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Cross-Platform Compatibility
+The calculator must function identically across all supported platforms. Mobile responsiveness is mandatory. Keyboard and click input methods must both be supported. Display must be clear and accessible on all screen sizes. Implementation will follow a phased approach: Phase 1 includes keyboard input (CLI), Phase 2 adds click buttons with both keyboard and click input support.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Error Handling and Recovery
+All error conditions must be anticipated and handled gracefully. Error messages must be user-friendly and actionable. The calculator must return to a valid state after error conditions. Clear functions (C, CE) must be available for error recovery. Optional previous calculation history must be maintained for user reference.
 
-### [PRINCIPLE_6_NAME]
+### VI. Minimalist Interface Design
+User interface must follow minimalistic design principles. Only essential elements must be displayed. Visual design must prioritize usability over decorative elements. Target users are general users requiring basic to intermediate calculations. Display must show current input and optionally previous calculation history.
 
+### VII. Atomic Commits
+All commits must be atomic, containing the smallest possible logical change. Each commit must represent a single, complete feature, bug fix, or improvement. Every code change must be accompanied by running `/sp.git_commit_pr` to ensure proper commit and pull request creation. Commits must have clear, descriptive messages following conventional commit format.
 
-[PRINCIPLE__DESCRIPTION]
+### VIII. Spec-Driven Development (SDD)
+All development must follow Spec-Driven Development principles. Features must be specified before implementation with clear user stories, requirements, and success criteria. Design documents must be created and approved before coding begins. Implementation must strictly adhere to specifications with any deviations requiring specification updates.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### IX. Python Type Hints
+All Python code must include comprehensive type hints for function parameters, return values, and variable declarations. Type hints must accurately reflect the actual types used and be maintained throughout the development lifecycle. Static type checking must pass before code is committed.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### X. Code Documentation
+All code must include appropriate documentation and comments explaining complex logic, algorithms, and business rules. Public functions, classes, and modules must have docstrings describing their purpose, parameters, and return values. Comments must explain the "why" behind non-obvious implementation choices, not just the "what".
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Technical Constraints
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The following constraints must be adhered to in all implementations:
+- Frontend: HTML, CSS, JavaScript with Tailwind CSS for styling
+- Backend: Python for complex calculations with type hints for clarity
+- Platform: Must be mobile responsive
+- Deployment: Vercel CLI for deployment
+- Testing: Unit tests required for both frontend (Jest/Vitest) and backend (pytest)
+- Git workflow: All changes must be committed using atomic commits and `/sp.git_commit_pr` command
+
+## Development Workflow
+
+All changes must follow the red-green-refactor cycle. Code reviews must verify compliance with all principles. New features must include corresponding tests. Error handling must be implemented before core functionality. Performance considerations must be validated for all mathematical operations. Implementation should follow phased delivery approach where Phase 1 delivers core functionality and Phase 2 adds enhanced features. All code changes must follow Spec-Driven Development principles with proper specifications created before implementation.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices for the Basic Calculator project. All code changes must demonstrate compliance with these principles. Amendments to this constitution require documentation of rationale and approval.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+Version: 1.2.0 | Ratified: 2026-01-05 | Last Amended: 2026-01-05
