@@ -100,21 +100,27 @@ A user wants to clear the current input or reset the calculator state. The calcu
 ### Functional Requirements
 
 - **FR-001**: System MUST support basic mathematical operations: addition (+), subtraction (-), multiplication (*), division (/)
-- **FR-002**: System MUST handle both integer and floating-point arithmetic with appropriate precision
+- **FR-002**: System MUST handle both integer and floating-point arithmetic with 10 decimal places precision
 - **FR-003**: System MUST respect BODMAS/PEMDAS order of operations when evaluating expressions
 - **FR-004**: System MUST provide meaningful error messages for invalid expressions or operations
 - **FR-005**: System MUST handle division by zero errors gracefully without crashing
-- **FR-006**: System MUST accept user input from command-line interface
+- **FR-006**: System MUST accept user input from command-line interface supporting both interactive and single-expression modes
 - **FR-007**: System MUST display calculation results to the user in a clear format
 - **FR-008**: System MUST support parentheses for grouping operations
 - **FR-009**: System MUST handle negative numbers appropriately
 - **FR-010**: System MUST provide clear function to reset current calculation state
+- **FR-011**: System MUST support flexible expression formatting (with or without spaces between operands and operators)
+- **FR-012**: System MUST provide multiple exit options ('quit', 'exit' commands and Ctrl+C)
+- **FR-013**: System MUST use secure expression evaluation approach (AST-based) to prevent code injection
+- **FR-014**: System MUST maintain application state after error conditions to allow continued operation
 
 ### Key Entities
 
-- **Mathematical Expression**: A string containing numbers and operators that represents a calculation to be performed
-- **Calculation Result**: The numerical output produced by evaluating a mathematical expression
-- **Calculator State**: The current status of the calculator (ready, processing, error, etc.)
+- **Mathematical Expression**: A string containing numbers and operators that represents a calculation to be performed; supports flexible formatting with or without spaces between operands and operators
+- **Calculation Result**: The numerical output produced by evaluating a mathematical expression with up to 10 decimal places precision
+- **Calculator State**: The current status of the calculator (ready, processing, error, etc.) that persists through error conditions
+- **Secure Expression Evaluator**: Component that safely evaluates expressions using AST-based parsing to prevent code injection
+- **CLI Interface**: Command-line interface supporting both interactive mode and single-expression mode with multiple exit options ('quit', 'exit', Ctrl+C)
 
 ## Success Criteria *(mandatory)*
 
@@ -125,6 +131,9 @@ A user wants to clear the current input or reset the calculator state. The calcu
 - **SC-003**: Calculator processes user input and displays results in under 1 second
 - **SC-004**: Calculator handles error conditions gracefully without crashing in 100% of test cases
 - **SC-005**: 95% of users can successfully perform basic calculations on first attempt without documentation
+- **SC-006**: Calculator maintains secure execution environment with no code injection vulnerabilities during expression evaluation
+- **SC-007**: Calculator supports flexible expression formatting (with or without spaces) with 100% parsing accuracy
+- **SC-008**: Calculator maintains application state after error conditions allowing continued operation without restart
 
 ## Clarifications
 
