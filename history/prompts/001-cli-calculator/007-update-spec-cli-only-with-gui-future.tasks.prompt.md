@@ -1,5 +1,5 @@
 ---
-id: 007
+id: 006
 title: update-spec-cli-only-with-gui-future
 stage: tasks
 date: 2026-01-07

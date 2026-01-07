@@ -1,5 +1,5 @@
 ---
-id: 006
+id: 007
 title: generate-tasks-for-cli-calculator
 stage: tasks
 date: 2026-01-07

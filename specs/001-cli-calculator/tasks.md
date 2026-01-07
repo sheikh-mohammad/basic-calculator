@@ -26,9 +26,9 @@ description: "Task list for CLI Calculator implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan in src/
-- [ ] T002 Initialize Python 3.8+ project with requirements.txt
-- [ ] T003 [P] Configure linting and formatting tools (flake8, black)
+- [X] T001 Create project structure per implementation plan in src/
+- [X] T002 Initialize Python 3.8+ project with requirements.txt
+- [X] T003 [P] Configure linting and formatting tools (flake8, black)
 
 ---
 
@@ -38,12 +38,12 @@ description: "Task list for CLI Calculator implementation"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Create calculator module structure with __init__.py files
-- [ ] T005 [P] Setup pytest configuration in pyproject.toml or pytest.ini
-- [ ] T006 Create main calculator entry point in calculator.py
-- [ ] T007 Setup basic CLI interface framework in src/calculator/cli.py
-- [ ] T008 Create core calculator class structure in src/calculator/core.py
-- [ ] T009 Create expression parser class structure in src/calculator/parser.py
+- [X] T004 Create calculator module structure with __init__.py files
+- [X] T005 [P] Setup pytest configuration in pyproject.toml or pytest.ini
+- [X] T006 Create main calculator entry point in calculator.py
+- [X] T007 Setup basic CLI interface framework in src/calculator/cli.py
+- [X] T008 Create core calculator class structure in src/calculator/core.py
+- [X] T009 Create expression parser class structure in src/calculator/parser.py
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -59,20 +59,20 @@ description: "Task list for CLI Calculator implementation"
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [ ] T010 [P] [US1] Create basic operations test in tests/test_calculator.py
-- [ ] T011 [P] [US1] Create parser tests for basic operations in tests/test_parser.py
-- [ ] T012 [P] [US1] Create CLI interface tests in tests/test_cli.py
+- [X] T010 [P] [US1] Create basic operations test in tests/test_calculator.py
+- [X] T011 [P] [US1] Create parser tests for basic operations in tests/test_parser.py
+- [X] T012 [P] [US1] Create CLI interface tests in tests/test_cli.py
 
 ### Implementation for User Story 1
 
-- [ ] T013 [P] [US1] Implement basic addition operation in src/calculator/core.py
-- [ ] T014 [P] [US1] Implement basic subtraction operation in src/calculator/core.py
-- [ ] T015 [P] [US1] Implement basic multiplication operation in src/calculator/core.py
-- [ ] T016 [P] [US1] Implement basic division operation in src/calculator/core.py
-- [ ] T017 [US1] Implement basic expression parsing in src/calculator/parser.py
-- [ ] T018 [US1] Connect parser to calculator core in src/calculator/core.py
-- [ ] T019 [US1] Implement basic CLI interface in src/calculator/cli.py
-- [ ] T020 [US1] Integrate calculator core with CLI in calculator.py
+- [X] T013 [P] [US1] Implement basic addition operation in src/calculator/core.py
+- [X] T014 [P] [US1] Implement basic subtraction operation in src/calculator/core.py
+- [X] T015 [P] [US1] Implement basic multiplication operation in src/calculator/core.py
+- [X] T016 [P] [US1] Implement basic division operation in src/calculator/core.py
+- [X] T017 [US1] Implement basic expression parsing in src/calculator/parser.py
+- [X] T018 [US1] Connect parser to calculator core in src/calculator/core.py
+- [X] T019 [US1] Implement basic CLI interface in src/calculator/cli.py
+- [X] T020 [US1] Integrate calculator core with CLI in calculator.py
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
